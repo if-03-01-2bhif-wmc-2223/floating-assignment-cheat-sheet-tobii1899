@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="CheetSheet" content="width=device-width" />
+    <title>My CheetSheet</title>
+  </head>
+  <body>
+    <h1>CheetSheet</h1>
+    <h3>SampleQuestions</h3>
+    <p>
+      Name the components of html elements properly <br>
+      opening tag (p) at the beginn, closing tag (p) at the end, paragraph-text -> between opening and closing tag<br>
+      <br>
+      Identify void elements and how they are denoted<br>
+      void elements do not have an end tag, they cannot have content inside, they have attributs and they cannot be nested<br>
+      <br>
+      Identify attributes<br>
+      they are characteristics or modifiers<br>
+      <br>
+      Write down the correct DOCTYPE declaration for html 5<br>
+      !DOCTYPE html<br>
+      <br>
+      Name the components of a css rule properly<br>
+      a CSS selector and a set of CSS properties<br>
+      <br>
+      Use combinators properly: direct child, descendant, adjacent sibling, sibling<br>
+      div (() => Descendant Selector, (>) => Child Selector, (+) => Adjacent Sibling Selector, (~) => General Sibling Selector) p {<br>
+      background-color: yellow;<br>
+      }<br>
+      <br>
+      Identify the difference between serif and sans-serif fonts<br>
+      serif fonts habe decorative lines or tapers<br>
+      <br>
+      colours: blue = #0000FF, yellow = #FFFF00, red = #FF0000<br>
+      <br>
+      Declarations for color, background color<br>
+      div {<br>
+        background: rgba(0, 128, 0, 0.3) <br>
+      }<br>
+      <br>
+      Pseudo classes for the ``a`` element<br>
+      a:focus   { background-color: red; color: black;}<br>
+      <br>
+      Declaration for text alignment (left, right, center, justify)<br>
+      div {<br>
+        text-align: (left) or (right) or (center) or (justify);<br>
+      }<br>
+      <br>
+      h1 {<br>
+        text-decoration-line: (overline) or (underline) or (line-through);<br>
+      }<br>
+      p.uppercase-lowercase-capitalize {<br>
+       text-transform: uppercase-lowercase-capitalize;<br>
+      }<br>
+      p1 {<br>
+       font-family: "Times New Roman", Times, serif;<br>
+      }<br>
+      p1 { <br>
+        font-style: normal; <br>
+      }<br>
+      p1 {<br> 
+       font-style: italic; <br>
+      }<br>
+      h1 {<br>
+        font-size: 40px;<br>
+      }<br>
+      p.thicker {<br>
+        font-weight: 900;<br>
+      }<br>
+    </p>
+
+    <h3>html</h3>
+    <p>
+      <!DOCTYPE html>
+      <html lang="en">
+         <head>
+            <meta charset="UFT-8" />
+            <meta name="description" content="This is a life coding training page" />
+            <meta name="keywords" content="Unit02, HTML, CSS" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>U02 - HTML / CSS</title>
+      
+            <style name ="stylesheet" src="styles.css"></style>
+            <link rel ="stylesheet" href="./styles.css"/>
+      
+            <style>
+               @import url(styles.css);
+            </style>
+      
+         </head>
+         <body>
+      
+            <h1>Unit 02 - HTML - CSS</h1>
+            <article>
+               <h1>Fortnite</h1>
+               <section>
+                  <p>This is my top level HTML paragraph.</p>
+                  <p>This paragraph comes after the first paragraph.<br>
+                     having a line break.</p>
+               </section>
+               <section>
+                  <p style="font-family: 'proportinal';">This text uses proportional font.</p>
+                  <p style="border: 2px solid green;">This text uses a 2px border.</p>
+                  <p>This<span></span><span> text </span> 
+                  uses proportinal font</p>
+                  <p style="font-family: monospace;">This text uses monospace font.</p>
+                  <p style="font-family: serif;">This text uses serif font.</p>
+                  <p style="font-family: sans-serif;">This text uses sans-serif font.</p>
+            </section>
+         </article>
+         </body>
+      </html>
+      </p>
+  </body>
+</html>
