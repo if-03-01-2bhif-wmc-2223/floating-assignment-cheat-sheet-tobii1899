@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cheat-Sheet 7</title>
+  </head>
+  <body>
+    <h2>Gradients</h2>
+    <p>
+      Ist ein farbverlauf. <br>
+      <strong>top to bottom</strong><br>
+      #grad {<br>
+        background-image: linear-gradient(red, yellow);<br>
+      }<br>
+      <strong>left to right</strong><br>
+      #grad {<br>
+        background-image: linear-gradient(to right, red , yellow);<br>
+      }<br>
+      <strong>top left to bottom right</strong><br>
+      #grad {<br>
+        background-image: linear-gradient(to bottom right, red, yellow);<br>
+      }<br>
+      <strong>syntax</strong><br>
+      background-image: linear-gradient(angle, color-stop1, color-stop2);<br>
+      <strong>180deg</strong><br>
+      #grad {<br>
+        background-image: linear-gradient(180deg, red, yellow);<br>
+      }<br>
+      <strong>multiple colors</strong><br>
+      #grad {<br>
+        background-image: linear-gradient(red, yellow, green);<br>
+      }<br>
+      <strong>rainbow background</strong><br>
+      #grad {
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);<br>
+      }<br>
+      <strong>Using Transparency</strong><br>
+      #grad {<br>
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));<br>
+      }<br>
+      <strong>Repeating a linear gradient</strong><br>
+      #grad {<br>
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);<br>
+      }<br>
+    </p>
+
+    <h2>rounded corners</h2>
+    <p>
+      #rcorners1 {<br>
+        border-radius: 25px;<br>
+        background: #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+      <br>
+      #rcorners2 {<br>
+        border-radius: 25px;<br>
+        border: 2px solid #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+      <br>
+      #rcorners3 {<br>
+        border-radius: 25px;<br>
+        background: url(paper.gif);<br>
+        background-position: left top;<br>
+        background-repeat: repeat;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+        <br>
+      #rcorners1 {<br>
+        border-radius: 15px 50px 30px 5px;<br>
+        background: #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+      <br>
+      #rcorners2 {<br>
+        border-radius: 15px 50px 30px;<br>
+        background: #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+      <br>
+      #rcorners3 {<br>
+        border-radius: 15px 50px;<br>
+        background: #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+      <br>
+      #rcorners4 {<br>
+        border-radius: 15px;<br>
+        background: #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+      #rcorners1 {<br>
+        border-radius: 50px / 15px;<br>
+        background: #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+      <br>
+      #rcorners2 {<br>
+        border-radius: 15px / 50px;<br>
+        background: #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+      <br>
+      #rcorners3 {<br>
+        border-radius: 50%;<br>
+        background: #73AD21;<br>
+        padding: 20px;<br>
+        width: 200px;<br>
+        height: 150px;<br>
+      }<br>
+    </p>
+
+    <h2>Text shadow</h2>
+    <p>
+      h1 { <br>
+        color: white;<br>
+        text-shadow: 2px 2px 4px #000000;<br>
+      }<br>
+    </p>
+
+    <h2>Css 2D Transform</h2>
+    <p>
+      <strong>translate()</strong> <br>
+      div {<br>
+        transform: translate(50px, 100px);<br>
+      }<br>
+      <strong>rotate()</strong><br>
+      div {<br>
+        transform: rotate(20deg);<br>
+      }<br>
+      div {<br>
+        transform: rotate(-20deg);<br>
+      }<br>
+      <strong>scale()</strong><br>
+      div {<br>
+        transform: scale(2, 3);<br>
+      }<br>
+      div {<br>
+        transform: scale(0.5, 0.5);<br>
+      }<br>
+      <strong>scaleX()</strong><br>
+      div {<br>
+        transform: scaleX(2);<br>
+      }<br>
+      div {<br>
+        transform: scaleX(0.5);<br>
+      }<br>
+      <strong>scaleY</strong><br>
+      div {<br>
+        transform: scaleY(3);<br>
+      }<br>
+      div {<br>
+        transform: scaleY(0.5);<br>
+      }<br>
+      <strong>skewX()</strong><br>
+      div {<br>
+        transform: skewX(20deg);<br>
+      }<br>
+      <strong>skewY()</strong><br>
+      div {<br>
+        transform: skewY(20deg);<br>
+      }<br>
+      <strong>skew()</strong><br>
+      div {<br>
+        transform: skew(20deg, 10deg);<br>
+      }<br>
+      div {<br>
+        transform: skew(20deg);<br>
+      }<br>
+      <strong>matrix()</strong><br>
+      div {<br>
+        transform: matrix(1, -0.3, 0, 1, 0, 0);<br>
+      }<br>
+    </p>
+
+    <h2>Css 3D Transform</h2>
+    <p>
+      <strong>rotateX()</strong><br>
+      #myDiv {<br>
+        transform: rotateX(150deg);<br>
+      }<br>
+      <strong>rotateY()</strong><br>
+      #myDiv {<br>
+        transform: rotateY(150deg);<br>
+      }<br>
+      <strong>rotateZ()</strong><br>
+      #myDiv {<br>
+        transform: rotateZ(90deg);<br>
+      }<br>
+    </p>
+
+    <h2>Css Transitions</h2>
+    <p>
+      div {<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background: red;<br>
+        transition: width 2s;<br>
+      }<br>
+      div:hover {<br>
+        width: 300px;<br>
+      }<br>
+      div {<br>
+        transition: width 2s, height 4s;<br>
+      }<br>
+      #div1 {transition-timing-function: linear;}<br>
+      #div2 {transition-timing-function: ease;}<br>
+      #div3 {transition-timing-function: ease-in;}<br>
+      #div4 {transition-timing-function: ease-out;}<br>
+      #div5 {transition-timing-function: ease-in-out;}<br>
+      div {<br>
+        transition-delay: 1s;<br>
+      }<br>
+      div {<br>
+        transition: width 2s, height 2s, transform 2s;<br>
+      }<br>
+      div {<br>
+        transition-property: width;<br>
+        transition-duration: 2s;<br>
+        transition-timing-function: linear;<br>
+        transition-delay: 1s;<br>
+      }<br>
+      div {<br>
+        transition: width 2s linear 1s;<br>
+      }<br>
+    </p>
+
+    <h2>Animationen</h2>
+    <p>
+      <strong>Animation1</strong><br>
+      /* The animation code */<br>
+      @keyframes example {<br>
+        from {background-color: red;}<br>
+        to {background-color: yellow;}<br>
+      }<br>
+      /* The element to apply the animation to */<br>
+      div {<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background-color: red;<br>
+        animation-name: example;<br>
+        animation-duration: 4s;<br>
+      }<br>
+      <strong>Animation2</strong><br>
+      /* The animation code */<br>
+      @keyframes example {<br>
+        0%   {background-color: red;}<br>
+        25%  {background-color: yellow;}<br>
+        50%  {background-color: blue;}<br>
+        100% {background-color: green;}<br>
+      }<br>
+      <br>
+      /* The element to apply the animation to */<br>
+      div {<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background-color: red;<br>
+        animation-name: example;<br>
+        animation-duration: 4s;<br>
+      }<br>
+      <strong>Animation3</strong><br>
+      /* The animation code */<br>
+      @keyframes example {<br>
+        0%   {background-color:red; left:0px; top:0px;}<br>
+        25%  {background-color:yellow; left:200px; top:0px;}<br>
+        50%  {background-color:blue; left:200px; top:200px;}<br>
+        75%  {background-color:green; left:0px; top:200px;}<br>
+        100% {background-color:red; left:0px; top:0px;}<br>
+      }<br>
+      <br>
+      /* The element to apply the animation to */<br>
+      div {<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        position: relative;<br>
+        background-color: red;<br>
+        animation-name: example;<br>
+        animation-duration: 4s;<br>
+      }<br>
+      <a href="https://www.w3schools.com/css/css3_animations.asp">Mehr Inofs</a><br>
+    </p>
+  </body>
+</html>
